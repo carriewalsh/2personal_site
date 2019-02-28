@@ -24,6 +24,10 @@ class PersonalSite
     render_view("cute_puppies.html")
   end
 
+  def self.error
+    render_view("error.html")
+  end
+
   def self.main_css
     render_static("/main.css")
   end
