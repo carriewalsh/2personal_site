@@ -18,7 +18,7 @@ class HomepageTest < CapybaraTestCase
 
   def test_homepage_links_to_cute_puppy_page
     visit "/"
-    click_on "Cute puppies!"
+    click_on "Cute puppies!!!"
     assert_equal 200, page.status_code
     assert_equal "/cute_puppies", current_path
     assert page.has_content?("So cute!")
