@@ -1,10 +1,10 @@
 require "minitest/autorun"
 require "minitest/pride"
-require "minitest/capybara"
+require "capybara/minitest"
 require "./app/controllers/personal_site"
 
 Capybara.app = PersonalSite
-class CapybaraTest < MiniTest::Test
+class CapybaraTestCase < MiniTest::Test
   include Capybara::DSL
   include Capybara::MiniTest::Assertions
 end
