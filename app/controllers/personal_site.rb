@@ -1,3 +1,4 @@
+require "pry"
 class PersonalSite
   def self.call(env)
     case env["PATH_INFO"]

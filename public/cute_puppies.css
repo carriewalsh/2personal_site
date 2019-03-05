@@ -4,4 +4,5 @@ body {
 img {
 	max-width:31%;
 	height:auto;
+  max-height: 500px;
 }
